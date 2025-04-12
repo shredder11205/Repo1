@@ -28,9 +28,16 @@ h1 {
 }
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
-.minor-section {
-  padding: 10px;
-  margin-bottom: 10px;
-  border: solid 1px #888;
-  background-color: #008712;
+.image-row {
+  display: flex;
+  justify-content: center; /* or space-between, or flex-start */
+  gap: 20px; /* spacing between images */
+  flex-wrap: wrap; /* allows wrapping on smaller screens */
+}
+
+.CTO-Photo {
+  width: 45%; /* or any size that fits side by side */
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px; /* optional: makes the images look nice */
 }
