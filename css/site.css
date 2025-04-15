@@ -41,3 +41,10 @@ h1 {
   height: auto;
   border-radius: 10px; /* optional: makes the images look nice */
 }
+
+.selfphoto {
+  width: 45%; /* or any size that fits side by side */
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px; /* optional: makes the images look nice */
+}
