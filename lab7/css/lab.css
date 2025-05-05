@@ -1,0 +1,24 @@
+
+body {
+    background-color: rgb(54, 54, 54);
+    font-family: sans-serif;
+  }
+  
+  #content {
+    background-color: rgb(54, 54, 54);
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid black;
+  }
+  
+  h1 {
+    color: darkblue;
+  }
+  
+  h2 {
+    color: rgb(2, 137, 248);
+  }
+  
+  p {
+    font-size: 16px;
+  }
