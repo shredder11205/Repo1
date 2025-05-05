@@ -1,4 +1,4 @@
-/* we can use a single css file to style all the files in our wwebsite */
+/* we can use a single css file to style all the files in our website */
 
 /* you can pick your own background colors, text colors, and fonts */
 
@@ -8,7 +8,7 @@ body {
 }
 
 /* we can have rules apply to multiple elements at the same time with commas */
-h1,h2,h3 {
+h1, h2, h3 {
   font-family: sans-serif;
 }
 
@@ -24,27 +24,49 @@ h1 {
   margin: 10px;
   padding: 10px;
   border: solid 1px #888;
-  background-color: #064316;
+  background-color: #b0b0b0;
 }
 
-/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
-.image-row {
+/* Hide/show class */
+.hidden {
+  display: none;
+}
+
+/* Toggle link styling */
+.toggle-link {
+  display: inline-block;
+  margin: 10px 0;
+  font-weight: bold;
+  color: darkblue;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Specific override to hide CTO group when hidden */
+.cto-images.hidden {
+  display: none;
+}
+
+/* CTO images side-by-side when visible */
+.cto-images {
   display: flex;
-  justify-content: center; /* or space-between, or flex-start */
-  gap: 20px; /* spacing between images */
-  flex-wrap: wrap; /* allows wrapping on smaller screens */
+  gap: 10px;
+  margin-bottom: 15px;
 }
 
-.CTO-Photo {
-  width: 45%; /* or any size that fits side by side */
+.cto-images img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+/* Standalone main photo sizing (non-expanding) */
+.standalone-image img {
+  display: block;
+  width: 100%;
   max-width: 400px;
   height: auto;
-  border-radius: 10px; /* optional: makes the images look nice */
-}
-
-.selfphoto {
-  width: 45%; /* or any size that fits side by side */
-  max-width: 300px;
-  height: auto;
-  border-radius: 10px; /* optional: makes the images look nice */
+  border-radius: 6px;
+  margin: 15px 0;
 }

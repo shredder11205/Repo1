@@ -1,60 +1,67 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<!-- This title is used for tabs and bookmarks -->
-	<title>Walter's Homepage</title>
+  <!-- This title is used for tabs and bookmarks -->
+  <title>Walter's Homepage</title>
 
-	<!-- Use UTF character set, a good idea with any webpage -->
-	<meta charset="UTF-8" />
-	<!-- Set viewport so page remains consistently scaled w narrow devices -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Use UTF character set, a good idea with any webpage -->
+  <meta charset="UTF-8" />
+  <!-- Set viewport so page remains consistently scaled w narrow devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<!-- Include a sitewide CSS file for consistent styling across the site -->
-	<link rel="stylesheet" type="text/css" href="css/site.css">
-	<!-- Lab-specifc CSS file for any special styling of this particular page -->
-	<link rel="stylesheet" type="text/css" href="css/homepage.css">
-	<!-- Link to javascript file - DEFER waits until all elements are rendered -->
-
-	<!-- <script type="text/javascript" src="./js/lab.js" DEFER></script> -->
+  <!-- Include a sitewide CSS file for consistent styling across the site -->
+  <link rel="stylesheet" type="text/css" href="css/site.css">
+  <!-- Lab-specific CSS file for any special styling of this particular page -->
+  <link rel="stylesheet" type="text/css" href="css/homepage.css">
 </head>
 <body>
-	<!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
-	<main id="content">
-		<section>
-			<h1>Walter's Homepage</h1>
-			<div class="image-row">
-					<!-- Note that all filenames use lowercase and no spaces -->
-					<img class="CTO-Photo" src="./img/VRChat_2025-03-13_17-11-35.158_1920x1080.png">
-					<img class="CTO-Photo" src="./img/VRChat_2025-02-27_19-38-26.269_1920x1080.png">
-					<img class="selfphoto" src="./img/Waltersaxophonepic.jpg">
-			</div>
-			
-			<div>		
-			
-				<h2>About Me</h2>
-					<p>Hi! I'm Walter, a jazz musician and an aspiring VR developer!</p>
-			</div>
+  <!-- Style this page by changing the CSS in ../css/site.css or css/homepage.css -->
+  <main id="content">
+    <section>
+      <h1>Walter's Homepage</h1>
 
-		</section>
-		<nav id="links">
-			<!-- Put links to labs here. -->
-			<a href="https://musescore.com/user/28309872" target="_blank">My Musescore Profile</a>
-			<a href="https://www.fiverr.com/shreddergaming?source=gig_page&gigs=slug%3Awrite-a-pro-level-jazz-or-orchestral-song-for-your-game%2Cpckg_id%3A1" target="_blank">My Fiverr</a>
+      <div class="image-gallery">
 
+        <!-- Grouped CTO images -->
+        <div class="cto-toggle-wrapper">
+          <a href="#" class="toggle-link" id="ctoToggle">CTO Photos</a>
+          <div class="cto-images hidden" id="ctoImages">
+            <img src="./img/VRChat_2025-03-13_17-11-35.158_1920x1080.png" alt="VRChat 1">
+            <img src="./img/VRChat_2025-02-27_19-38-26.269_1920x1080.png" alt="VRChat 2">
+          </div>
+        </div>
 
-		</nav>
+        <!-- Standalone (always visible) main photo -->
+        <div class="standalone-image">
+          <img src="./img/Waltersaxophonepic.jpg" alt="Saxophone Walter">
+        </div>
 
-		<div>
-			<h3>Labs</h3>
-			<ul>
-				<li><a href="/lab2/index.html">lab 2</a></li>
-				<li><a href="/lab3/index.html">lab 3</a></li>
-				<li><a href="/lab4/index.html">lab 4</a></li>
-				<li><a href="/lab5/index.html">lab 5</a></li>
-				<li><a href="/lab6/index.html">lab 6</a></li>
-			</ul>
+      </div>
 
-		</div>
-	</main>
+      <h2>About Me</h2>
+      <p>Hi! I'm Walter, a jazz musician and an aspiring VR developer!</p>
+
+    </section>
+
+    <nav id="links">
+      <!-- Put links to labs here. -->
+      <a href="https://musescore.com/user/28309872" target="_blank">My Musescore Profile</a>
+      <a href="https://www.fiverr.com/shreddergaming?source=gig_page&gigs=slug%3Awrite-a-pro-level-jazz-or-orchestral-song-for-your-game%2Cpckg_id%3A1" target="_blank">My Fiverr</a>
+    </nav>
+
+    <div>
+      <h3>Labs</h3>
+      <ul>
+        <li><a href="lab2/index.html">lab 2</a></li>
+        <li><a href="lab3/index.html">lab 3</a></li>
+        <li><a href="lab4/index.html">lab 4</a></li>
+        <li><a href="lab5/index.html">lab 5</a></li>
+        <li><a href="lab6/index.html">lab 6</a></li>
+      </ul>
+    </div>
+  </main>
+
+  <!-- Link to your JS file -->
+  <script src="js/site.js" defer></script>
 </body>
 </html>
