@@ -1,0 +1,43 @@
+
+body {
+    background-color: #e6f0e6; 
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    color: #333; 
+}
+
+h1, h2 {
+    color: #255025; 
+}
+
+#challenge, #problems, #results, #form-section, #output {
+    background-color: #d4e9d4; 
+    border: 2px solid #255025; 
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px; 
+}
+
+input[type="text"] {
+    padding: 5px;
+    border: 1px solid #255025;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #255025; 
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: #193819; 
+}
+
+.text p {
+    font-weight: bold;
+    color: #1f421f; 
+}
