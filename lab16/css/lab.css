@@ -1,0 +1,38 @@
+body {
+    background: #f5f5f5;
+    color: #222;
+    font-family: Arial, sans-serif;
+    margin: 30px;
+}
+
+h1 {
+    text-align: center;
+    color: #3776ab;
+}
+
+#challenge, #problems, #results {
+    background: #fff;
+    padding: 18px 20px;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    max-width: 500px;
+}
+
+h2 {
+    color: #444;
+    margin-top: 0;
+}
+
+#output {
+    margin-top: 15px;
+    text-align: center;
+}
+
+#output img {
+    max-width: 100%;
+    border: 2px solid #e1e1e1;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(55, 118, 171, 0.12);
+    margin-top: 12px;
+}
